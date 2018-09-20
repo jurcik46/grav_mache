@@ -1,0 +1,6 @@
+    <div><strong>Name</strong>: sdfsd</div>
+	<div><strong>Name</strong>: sdfsd</div>
+    <div><strong>Email</strong>: jurcik46@gmail.com</div>
+	<div><strong>Email</strong>: jurcik46@gmail.com</div>
+    <div><strong>Message</strong>: sdfsdfs</div>
+	<div><strong>Message</strong>: sdfsdfs</div>

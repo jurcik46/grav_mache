@@ -1,0 +1,8 @@
+{% if page.header.sponsors %}
+
+                        {% for sponsor in page.header.sponsors %}
+                            <p> {{sponsor.name}} </p>
+                            <img src="{{page.media.images[sponsor.icon].cache.url()}}">
+                        {% endfor %}
+
+{% endif %}

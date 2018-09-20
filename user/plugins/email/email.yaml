@@ -1,0 +1,15 @@
+enabled: true
+from:
+from_name:
+to:
+to_name:
+mailer:
+  engine: smtp
+  smtp:
+    server: smtp.gmail.com
+    port: 465
+    encryption: ssl
+    user: 'jurcik46@gmail.com'
+    password: 'rybekdzqjdsqjytt'
+content_type: text/html
+debug: false

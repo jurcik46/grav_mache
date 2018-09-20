@@ -1,0 +1,3 @@
+{% for field in form.fields %}
+    <div><strong>{{ field.label }}</strong>: {{ string(form.value(field.name)|e) }}</div>
+{% endfor %}

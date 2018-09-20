@@ -1,0 +1,11 @@
+email: davidpida@gmail.com
+fullname: Davidpida
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$tffvkW2wCGZvZ171Z/wWHOufKLWNfkq65nHJljJAsxldsse4/478G

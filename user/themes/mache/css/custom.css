@@ -1,0 +1,126 @@
+header, .header {
+
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.85);
+}
+
+
+
+.nav-collapse, .nav-collapse ul {
+
+    margin-top: 10px;
+}
+
+header.sticky {
+    opacity: 1;
+    background: #FFFFFF;
+    border-bottom: solid 6px #cf172b;
+}
+
+
+
+.nav-collapse a:active, .nav-collapse .active a {
+    color: #cf172b;
+}
+
+nav ul li a:hover {
+    color: #cf172b;
+}
+
+.se-pre-con {
+    background: #cf172b;
+}
+
+span.line {
+    background: #cf172b;
+}
+
+ nav ul li a {
+    color: #333333;
+}
+
+#section-1 .banner h1 {
+    color: #333333;
+}
+
+#g-recaptcha {
+    width: 304px;
+    margin: 0 auto;
+}
+
+textarea {
+    width: 50%;
+    height: 200px;
+}
+
+textarea[placeholder] {
+    padding: 10px 15px;
+}
+
+input {
+    width: 100%;
+}
+
+input[placeholder] {
+    padding-left: 10px;
+}
+
+input:focus, textarea:focus {
+    border-color: cadetblue;
+    box-shadow: 0 8px 6px -6px #ccc;
+    transition: 0.2s;
+}
+
+input, textarea {
+    border: 1px solid #a5a5a5;
+    border-radius: 3px;
+}
+
+.user-name, .user-email {
+    width: 292px;
+    display: inline-block;
+}
+.nav-toggle:before{
+    color: #000000;
+
+}
+.nav-toggle.active:before{
+
+    color: #000000;
+}
+
+
+.joinnow {
+
+    background: #212121;
+}
+
+.joinnow a{
+    color: #cf172b;
+}
+.map{
+    background: #212121;
+}
+
+@media only screen and (max-width: 766px) {
+    .backcolor {
+        background: rgb(255, 255, 255);
+        background: rgba(255, 255, 255, 0.85);
+    }
+
+    .logo img{
+        width: 160px;
+    }
+
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+
+    .js .nav-collapse.closed{
+    }
+    .logo {
+    }
+
+    .logo img{
+    }
+}

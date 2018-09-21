@@ -1,11 +1,34 @@
 <section class="map">
     <div class="container">
         <div class="row">
-            <div class="col-4">asdsa</div>
-            <div class="col">asdas
-         {#       <div class="map-container">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-md-12 col-sm-6">
+                        <div class="widget">
+                            <h3 class="widget-title">{{ page.header.name }}</h3>
+                            <div class="widget-content">
+                                <p>
+                                    {{ page.header.address }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-6">
+                        <div class="widget">
+                            <h3 class="widget-title">{{ page.header.contact_titile }}</h3>
+                            <div class="widget-content"><p>
+                                    E-mail:     <a href="mailto:{{ page.header.contact_email }}">{{ page.header.contact_email }}</a>
+                                    <br>
+                                    Telefon:    {{ page.header.contact_phone }}
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8 col-12 mb-5">
+               <div class="map-container ">
                     <div id="googleMaps"></div>
-                </div>#}
+                </div>
             </div>
         </div>
     </div>

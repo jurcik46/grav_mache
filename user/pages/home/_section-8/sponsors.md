@@ -1,13 +1,18 @@
 ---
 title: Sponros
-media_order: 'avatar.png,190_1399736061.jpg'
+media_order: 'stiahnuť (1).png,stiahnuť (2).png,stiahnuť.png,images.png,IBM-Company-Logo.jpg'
 menu: Sponsors
 sponsors:
     -
-        icon: 190_1399736061.jpg
-        name: asddasdasdasd
+        icon: IBM-Company-Logo.jpg
+        link: 'https://champion.gg/'
     -
-        icon: avatar.png
-        name: ggggggggg
+        icon: images.png
+    -
+        icon: 'stiahnuť (1).png'
+    -
+        icon: 'stiahnuť (2).png'
+    -
+        icon: stiahnuť.png
 ---
 

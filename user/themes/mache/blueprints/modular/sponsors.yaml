@@ -12,9 +12,6 @@ form:
           type: tab
           title: THEME_MACHE.SPONSORS_TITLE
           fields:
-            contact:
-              type: text
-              label: THEME_MACHE.CONTACT_EMAIL
             header.sponsors:
               type: list
               label: THEME_MACHE.SPONSORS_TITLE
@@ -28,9 +25,9 @@ form:
                   accept:
                     - .png
                     - .jpg
-                .name:
+                .link:
                   type: text
-                  label: THEME_MACHE.SPONSORS_NAME
+                  label: THEME_MACHE.SPONSORS_LINK
 
 
 

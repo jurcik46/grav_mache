@@ -64,8 +64,8 @@
 		autoControlsSelector: null,
 
 		// AUTO
-		auto: false,
-		pause: 4000,
+		auto: true,
+		pause: 6000,
 		autoStart: true,
 		autoDirection: 'next',
 		autoHover: false,
@@ -74,9 +74,9 @@
 
 		// CAROUSEL
 		minSlides: 1,
-		maxSlides: 1,
-		moveSlides: 0,
-		slideWidth: 0,
+		maxSlides: 3,
+		moveSlides: 3,
+		slideWidth: 400,
 
 		// CALLBACKS
 		onSliderLoad: function() {},

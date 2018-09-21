@@ -1,8 +1,23 @@
+<section class="sponsors">
+<div class="container">
 {% if page.header.sponsors %}
 
-                        {% for sponsor in page.header.sponsors %}
-                            <p> {{sponsor.name}} </p>
-                            <img src="{{page.media.images[sponsor.icon].cache.url()}}">
-                        {% endfor %}
+                 <section class="customer-logos slider">
+                     <h2>Sponsors</h2>
+                     <span class="line"></span>
+                    <div class="sponsors imgs"> {% for sponsor in page.header.sponsors %}
+                                <a href="{% if sponsor.link %} {{ sponsor.link }}
+                                        {% endif %}">
+                                    <img src="{{page.media.images[sponsor.icon].cache.url()}}">
+                                </a>
+
+                    {% endfor %}
+                    </div>
+                 </section>
 
 {% endif %}
+</div>
+</section>
+
+
+

@@ -18,7 +18,7 @@ class __TwigTemplate_5fd4984afa836874b70c6082311a71cd5c2dacb1dc15032be63bce2145c
         // line 1
         if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "slider", array())) {
             // line 2
-            echo "<div class=\"testimonials\"";
+            echo "<div class=\"testimonials slider\"";
             if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "background_image", array())) {
                 echo " style=\"background-image: url(";
                 echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), "images", array()), $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "background_image", array()), array(), "array"), "cache", array()), "url", array(), "method");
@@ -117,7 +117,7 @@ class __TwigTemplate_5fd4984afa836874b70c6082311a71cd5c2dacb1dc15032be63bce2145c
     public function getSourceContext()
     {
         return new Twig_Source("{% if page.header.slider %}
-<div class=\"testimonials\"{%if page.header.background_image %} style=\"background-image: url({{ page.media.images[page.header.background_image].cache.url() }})\"{% endif %}>
+<div class=\"testimonials slider\"{%if page.header.background_image %} style=\"background-image: url({{ page.media.images[page.header.background_image].cache.url() }})\"{% endif %}>
     <div class=\"container\">
         <div class=\"row\">
             <div class=\"col-lg-12 os-animation\" data-os-animation=\"fadeIn\" data-os-animation-delay=\"0.4s\">
@@ -147,6 +147,6 @@ class __TwigTemplate_5fd4984afa836874b70c6082311a71cd5c2dacb1dc15032be63bce2145c
     </div>
 </div>
 {% endif %}
-", "modular/slider.html.twig", "/var/www/public/mache/user/themes/mache/templates/modular/slider.html.twig");
+", "modular/slider.html.twig", "/var/www/public/grav_mache/user/themes/mache/templates/modular/slider.html.twig");
     }
 }

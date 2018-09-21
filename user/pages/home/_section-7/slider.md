@@ -1,19 +1,38 @@
 ---
 title: slider
-media_order: 'end.png,start.png,ba55aec27a77b512ffbdb654adb012f61ad6b0e4.jpg'
+media_order: 476085198-612x612.jpg
 menu: slider
-background_image: ba55aec27a77b512ffbdb654adb012f61ad6b0e4.jpg
 slider:
     -
-        person_photo: end.png
+        person_photo: 476085198-612x612.jpg
         person_name: assssssssssss
         person_description: sssssssssssssssssss
+        person_facebook: asdasd
         person_youtube: vcccbcc
     -
-        person_photo: start.png
+        person_photo: 476085198-612x612.jpg
         person_name: ffffffffff
         person_description: ggggggggggggggg
         person_facebook: hhhhhhhhhhhh
+        person_youtube: asdasd
+    -
+        person_photo: 476085198-612x612.jpg
+        person_name: asdasd
+        person_description: asdasd
+        person_facebook: asdsad
+        person_youtube: asdasd
+    -
+        person_photo: 476085198-612x612.jpg
+        person_name: asdsad
+        person_description: asdsad
+        person_facebook: asdsad
+        person_youtube: asdsad
+    -
+        person_photo: 476085198-612x612.jpg
+        person_name: asdasd
+        person_description: asdasd
+        person_facebook: adsasd
+        person_youtube: asdasd
 opening_icon: start.png
 closing_icon: end.png
 testimonials:

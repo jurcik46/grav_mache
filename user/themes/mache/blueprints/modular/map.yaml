@@ -28,3 +28,23 @@ form:
               validate:
                 min: 0
                 max: 19
+        contact:
+          type: tab
+          title: THEME_MACHE.CONTACT
+          fields:
+            header.name:
+              type: text
+              label: THEME_MACHE.CONTACT_NAME
+            header.address:
+              type: text
+              label: THEME_MACHE.CONTACT_ADDRESS
+            header.contact_titile:
+                type: text
+                label:  THEME_MACHE.CONTACT_TITLE
+            header.contact_email:
+                type: text
+                label: THEME_MACHE.CONTACT_EMAIL
+            header.contact_phone:
+                type: text
+                label: THEME_MACHE.CONTACT_PHONE
+

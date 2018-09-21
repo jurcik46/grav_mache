@@ -18,12 +18,12 @@ header.sticky {
 }
 
 
-
 .nav-collapse a:active, .nav-collapse .active a {
     color: #cf172b;
 }
 
 nav ul li a:hover {
+    text-decoration: none;
     color: #cf172b;
 }
 
@@ -99,8 +99,65 @@ input, textarea {
     color: #cf172b;
 }
 .map{
+    color: #cacaca;
+    padding: 30px;
     background: #212121;
 }
+
+.map a{
+    font-weight: bold;
+    color: #c22B2E;
+}
+
+.map .widget .widget-title{
+    font-family: 'DINPro-Black', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 25px;
+
+}
+
+.map .widget{
+    margin-bottom: 35px;
+
+}
+
+.sponsors {
+
+    padding-bottom: 30px ;
+}
+
+.sponsors h2{
+    text-align:center;
+    padding-top: 20px;
+}
+.sponsors .imgs{
+    text-align: center;
+
+}
+
+.sponsors img{
+    height: 150px;
+    vertical-align: middle;
+    max-width: 200px;
+    margin: 5px;
+}
+.testimonials{
+    padding: 50px;
+    background: #CCCCCC;
+}
+
+.bxslider img{
+    border-radius: 300px;
+    height: 150px;
+    width: 150px;
+}
+
+
+
 
 @media only screen and (max-width: 766px) {
     .backcolor {
@@ -124,3 +181,6 @@ input, textarea {
     .logo img{
     }
 }
+
+
+

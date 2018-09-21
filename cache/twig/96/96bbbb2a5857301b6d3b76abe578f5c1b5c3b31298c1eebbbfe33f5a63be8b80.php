@@ -99,10 +99,17 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
         ";
         // line 30
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 40
+        // line 46
         echo "        ";
         echo $this->getAttribute(($context["assets"] ?? null), "css", array(), "method");
         echo "
+
+        <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>
+        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>
+        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>
+
+
+
     </head>
 
     <body>
@@ -116,9 +123,9 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
                     <div class=\"col-lg-12\">
                         <div class=\"logo\">
                             ";
-        // line 53
+        // line 66
         if (($context["logo"] ?? null)) {
-            // line 54
+            // line 67
             echo "                            <a href=\"";
             echo (((($context["base_url"] ?? null) == "")) ? ("/") : (($context["base_url"] ?? null)));
             echo "\"><img src=\"";
@@ -128,14 +135,14 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
             echo "\"/></a>
                             ";
         }
-        // line 56
+        // line 69
         echo "                        </div>
 
                         <nav class=\"nav-collapse\">
                             ";
-        // line 59
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 59)->display($context);
-        // line 60
+        // line 72
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 72)->display($context);
+        // line 73
         echo "                        </nav>
                     </div>
                 </div>
@@ -143,22 +150,22 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
         </header>
 
         ";
-        // line 66
+        // line 79
         $this->displayBlock('content', $context, $blocks);
-        // line 69
+        // line 82
         echo "
         <footer>
             <div class=\"container\">
                 <div class=\"row\">
                     <div class=\"col-lg-6 col-sm-6 col-md-6\">
                         ";
-        // line 74
+        // line 87
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->markdownFunction($this->getAttribute(($context["theme_config"] ?? null), "left_footer", array()));
         echo "
                     </div>
                     <div class=\"col-lg-6 col-sm-6 col-md-6\">
                         <div class=\"rightside\">";
-        // line 77
+        // line 90
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->markdownFunction($this->getAttribute(($context["theme_config"] ?? null), "right_footer", array()));
         echo "</div>
                     </div>
@@ -167,14 +174,14 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
         </footer>
 
         ";
-        // line 83
+        // line 96
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 90
+        // line 103
         echo "        ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(), "method");
         echo "
         ";
-        // line 91
+        // line 104
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(0 => "bottom"), "method");
         echo "
     </body>
@@ -186,61 +193,69 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
     public function block_stylesheets($context, array $blocks = array())
     {
         // line 31
-        echo "            <link href='https://fonts.googleapis.com/css?family=Lato:100,400,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
+        echo "            <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">
+            <link href='https://fonts.googleapis.com/css?family=Lato:100,400,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
+            <link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Montserrat:400,700\">
+            <link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Roboto:300,400,700,400italic,700italic&amp;subset=latin,latin-ext\">
+
             ";
-        // line 32
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/grid.css"), "method");
-        // line 33
-        echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/style.css"), "method");
-        // line 34
-        echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/menu.css"), "method");
-        // line 35
-        echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/jquery.bxslider.css"), "method");
         // line 36
-        echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/responsive.css"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/grid.css"), "method");
         // line 37
         echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/animate.css"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/style.css"), "method");
         // line 38
+        echo "            ";
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/menu.css"), "method");
+        // line 39
+        echo "            ";
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/jquery.bxslider.css"), "method");
+        // line 40
+        echo "            ";
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/responsive.css"), "method");
+        // line 41
+        echo "            ";
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/animate.css"), "method");
+        // line 42
         echo "\t\t\t";
         $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/custom.css"), "method");
-        // line 39
-        echo "        ";
+        // line 43
+        echo "\t\t\t";
+        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/jquery.bxslider.js"), "method");
+        // line 44
+        echo "
+        ";
     }
 
-    // line 66
+    // line 79
     public function block_content($context, array $blocks = array())
     {
-        // line 67
+        // line 80
         echo "            ";
         echo ($context["content"] ?? null);
         echo "
         ";
     }
 
-    // line 83
+    // line 96
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 84
+        // line 97
         echo "            ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "jquery", 1 => 101), "method");
-        // line 85
+        // line 98
         echo "            ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/jquery.bxslider.js"), "method");
-        // line 86
+        // line 99
         echo "            ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/script.js"), "method");
-        // line 87
+        // line 100
         echo "            ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/fixed-responsive-nav.js"), "method");
-        // line 88
+        // line 101
         echo "            ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/waypoints.min.js"), "method");
-        // line 89
+        // line 102
         echo "        ";
     }
 
@@ -256,7 +271,7 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
 
     public function getDebugInfo()
     {
-        return array (  244 => 89,  241 => 88,  238 => 87,  235 => 86,  232 => 85,  229 => 84,  226 => 83,  219 => 67,  216 => 66,  212 => 39,  209 => 38,  206 => 37,  203 => 36,  200 => 35,  197 => 34,  194 => 33,  192 => 32,  189 => 31,  186 => 30,  178 => 91,  173 => 90,  171 => 83,  162 => 77,  156 => 74,  149 => 69,  147 => 66,  139 => 60,  137 => 59,  132 => 56,  122 => 54,  120 => 53,  103 => 40,  101 => 30,  96 => 28,  93 => 27,  87 => 25,  85 => 24,  81 => 22,  79 => 21,  71 => 20,  65 => 16,  57 => 13,  54 => 12,  49 => 11,  47 => 10,  40 => 8,  37 => 7,  32 => 6,  30 => 5,  28 => 4,  26 => 3,  24 => 2,  22 => 1,);
+        return array (  259 => 102,  256 => 101,  253 => 100,  250 => 99,  247 => 98,  244 => 97,  241 => 96,  234 => 80,  231 => 79,  226 => 44,  223 => 43,  220 => 42,  217 => 41,  214 => 40,  211 => 39,  208 => 38,  205 => 37,  203 => 36,  196 => 31,  193 => 30,  185 => 104,  180 => 103,  178 => 96,  169 => 90,  163 => 87,  156 => 82,  154 => 79,  146 => 73,  144 => 72,  139 => 69,  129 => 67,  127 => 66,  103 => 46,  101 => 30,  96 => 28,  93 => 27,  87 => 25,  85 => 24,  81 => 22,  79 => 21,  71 => 20,  65 => 16,  57 => 13,  54 => 12,  49 => 11,  47 => 10,  40 => 8,  37 => 7,  32 => 6,  30 => 5,  28 => 4,  26 => 3,  24 => 2,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -299,7 +314,11 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
         <link rel=\"canonical\" href=\"{{ page.url(true, true) }}\" />
 
         {% block stylesheets %}
+            <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">
             <link href='https://fonts.googleapis.com/css?family=Lato:100,400,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
+            <link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Montserrat:400,700\">
+            <link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Roboto:300,400,700,400italic,700italic&amp;subset=latin,latin-ext\">
+
             {% do assets.addCss('theme://css/grid.css') %}
             {% do assets.addCss('theme://css/style.css') %}
             {% do assets.addCss('theme://css/menu.css') %}
@@ -307,8 +326,17 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
             {% do assets.addCss('theme://css/responsive.css') %}
             {% do assets.addCss('theme://css/animate.css') %}
 \t\t\t{% do assets.addCss('theme://css/custom.css') %}
+\t\t\t{% do assets.addJs('theme://js/jquery.bxslider.js') %}
+
         {% endblock %}
         {{ assets.css() }}
+
+        <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>
+        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>
+        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>
+
+
+
     </head>
 
     <body>
@@ -362,6 +390,6 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
         {{ assets.js('bottom') }}
     </body>
 </html>
-", "partials/base.html.twig", "/var/www/public/mache/user/themes/mache/templates/partials/base.html.twig");
+", "partials/base.html.twig", "/var/www/public/grav_mache/user/themes/mache/templates/partials/base.html.twig");
     }
 }

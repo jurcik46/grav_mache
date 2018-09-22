@@ -1,7 +1,7 @@
 ---
 title: 'join us'
 heading: 'Lorem ipsum dolor sit amet, consectetur'
-button_label: 'Join us'
-button_url: '#section-6'
+button_label: 'Registruj sa'
+button_url: /grav_mache/registration
 ---
 

@@ -45,6 +45,7 @@ class __TwigTemplate_ddb37871a7abbe88ef625e918b9c01bb51ff151338ccf53840aa86a0d75
                     echo $this->getAttribute($this->getAttribute($context["module"], "header", array()), "menu", array());
                     echo "</a>
     </li>
+
     ";
                     ++$context['loop']['index0'];
                     ++$context['loop']['index'];
@@ -54,21 +55,48 @@ class __TwigTemplate_ddb37871a7abbe88ef625e918b9c01bb51ff151338ccf53840aa86a0d75
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['module'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-        } else {
             // line 9
-            echo "    ";
+            echo "
+    ";
+            // line 10
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["pages"] ?? null), "children", array()), "visible", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["p"]) {
-                // line 10
+                // line 11
+                echo "        <li class=\"menu-item";
+                echo ($context["current_page"] ?? null);
+                echo "\">
+            <a href=\"";
+                // line 12
+                echo $this->getAttribute($context["p"], "url", array());
+                echo "\">";
+                echo $this->getAttribute($context["p"], "menu", array());
+                echo "</a>
+        </li>
+    ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['p'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+        } else {
+            // line 16
+            echo "    <li class=\"menu-item\">
+        <a href=\"/grav_mache\">Home</a>
+    </li>
+    ";
+            // line 19
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["pages"] ?? null), "children", array()), "visible", array()));
+            foreach ($context['_seq'] as $context["_key"] => $context["p"]) {
+                // line 20
                 echo "    ";
                 $context["current_page"] = ((($this->getAttribute($context["p"], "active", array()) || $this->getAttribute($context["p"], "activeChild", array()))) ? (" active") : (""));
-                // line 11
+                // line 21
                 echo "    <li class=\"menu-item";
                 echo ($context["current_page"] ?? null);
                 echo "\">
         <a href=\"";
-                // line 12
+                // line 22
                 echo $this->getAttribute($context["p"], "url", array());
                 echo "\">";
                 echo $this->getAttribute($context["p"], "menu", array());
@@ -80,7 +108,7 @@ class __TwigTemplate_ddb37871a7abbe88ef625e918b9c01bb51ff151338ccf53840aa86a0d75
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['p'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
         }
-        // line 16
+        // line 26
         echo "</ul>
 ";
     }
@@ -97,7 +125,7 @@ class __TwigTemplate_ddb37871a7abbe88ef625e918b9c01bb51ff151338ccf53840aa86a0d75
 
     public function getDebugInfo()
     {
-        return array (  84 => 16,  72 => 12,  67 => 11,  64 => 10,  59 => 9,  43 => 5,  36 => 4,  24 => 3,  22 => 2,  19 => 1,);
+        return array (  112 => 26,  100 => 22,  95 => 21,  92 => 20,  88 => 19,  83 => 16,  71 => 12,  66 => 11,  62 => 10,  59 => 9,  43 => 5,  36 => 4,  24 => 3,  22 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -116,8 +144,18 @@ class __TwigTemplate_ddb37871a7abbe88ef625e918b9c01bb51ff151338ccf53840aa86a0d75
     <li class=\"menu-item{% if loop.index == 1 %} active{% endif %}\">
         <a href=\"#{{ module.folder|trim('_') }}\" data-scroll>{{ module.header.menu }}</a>
     </li>
+
+    {% endfor %}
+
+    {% for p in pages.children.visible %}
+        <li class=\"menu-item{{ current_page }}\">
+            <a href=\"{{ p.url }}\">{{ p.menu }}</a>
+        </li>
     {% endfor %}
 {% else %}
+    <li class=\"menu-item\">
+        <a href=\"/grav_mache\">Home</a>
+    </li>
     {% for p in pages.children.visible %}
     {% set current_page = (p.active or p.activeChild) ? ' active' : '' %}
     <li class=\"menu-item{{ current_page }}\">

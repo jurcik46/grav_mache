@@ -4,8 +4,18 @@
     <li class="menu-item{% if loop.index == 1 %} active{% endif %}">
         <a href="#{{ module.folder|trim('_') }}" data-scroll>{{ module.header.menu }}</a>
     </li>
+
+    {% endfor %}
+
+    {% for p in pages.children.visible %}
+        <li class="menu-item{{ current_page }}">
+            <a href="{{ p.url }}">{{ p.menu }}</a>
+        </li>
     {% endfor %}
 {% else %}
+    <li class="menu-item">
+        <a href="/grav_mache">Home</a>
+    </li>
     {% for p in pages.children.visible %}
     {% set current_page = (p.active or p.activeChild) ? ' active' : '' %}
     <li class="menu-item{{ current_page }}">

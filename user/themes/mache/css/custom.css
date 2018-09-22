@@ -90,6 +90,10 @@ input, textarea {
     color: #000000;
 }
 
+.nav-collapse ul {
+    margin-top:5px
+}
+
 /*cat1*/
 .joinnow {
 
@@ -99,6 +103,12 @@ input, textarea {
 .joinnow a{
     text-decoration: none;
     color: #cf172b;
+}
+
+/*error page*/
+
+.error{
+    background: #2b2b2b;
 }
 
 /*features*/
@@ -129,6 +139,7 @@ input, textarea {
 
 .price .price-container a {
     background: #cf172b;
+    text-decoration: none;
 
 }
 
@@ -210,11 +221,11 @@ input, textarea {
 
 .social a {
     border-radius: 300px;
-    border: 1px solid #cf172b;
-    padding: 8px;
+    border: 2px solid #cf172b;
+    padding: 6px;
     width: 50px;
     height: 50px;
-    line-height: 28px;
+    line-height: 30px;
     text-align: center;
     display: inline-block;
     color: #ffffff;

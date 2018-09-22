@@ -7,18 +7,20 @@
         {% set image = item.name %}
     {% endfor %}
 {% endif %}
-
+<section class="error">
 <div class="banner"{% if image %} style="background-image: url({{ url('theme://images/' ~ image) }})"{% endif %}>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1>{{ 'ERROR'|t }} {{ page.header.http_response_code }}</h1>
+                <h1 class="text-center mt-5 mb-5 pb-2 text-uppercase text-white"> <strong> {{ 'ERROR'|t }} {{ page.header.http_response_code }}</strong></h1>
+
                 <span class="line"></span>
                 <p class="top">{{ page.content }}</p>
             </div>
         </div>
     </div>
 </div>
+</section>
 {% endblock %}
 
 {% endembed %}

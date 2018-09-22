@@ -33,6 +33,7 @@ nav ul li a:hover {
 
 span.line {
     background: #cf172b;
+    margin-top: -30px;
 }
 
  nav ul li a {
@@ -89,15 +90,54 @@ input, textarea {
     color: #000000;
 }
 
-
+/*cat1*/
 .joinnow {
 
     background: #212121;
 }
 
 .joinnow a{
+    text-decoration: none;
     color: #cf172b;
 }
+
+/*features*/
+
+.features h3 {
+    color: #cf172b;
+
+
+}
+
+/*Service*/
+.services h3 {
+
+    color: #cf172b;
+}
+
+/*Contact modular*/
+
+.contact {
+    background: #CCCCCC;
+}
+
+/*Price*/
+
+.price .price-container p {
+    padding: 5px 5px 5px 10px;
+}
+
+.price .price-container a {
+    background: #cf172b;
+
+}
+
+.price .price-container:hover .black{
+    background: #cf172b;
+
+}
+
+/*Contact and map*/
 .map{
     color: #cacaca;
     padding: 30px;
@@ -124,7 +164,7 @@ input, textarea {
     margin-bottom: 35px;
 
 }
-
+/*Sponsors */
 .sponsors {
 
     padding-bottom: 30px ;
@@ -145,17 +185,77 @@ input, textarea {
     max-width: 200px;
     margin: 5px;
 }
-.testimonials{
-    padding: 50px;
-    background: #CCCCCC;
+
+/*social icons*/
+.team {
+    padding-bottom: 70px;
+    background: #2b2b2b;
 }
 
-.bxslider img{
+
+
+.social {
+    margin: 0 20px 0 20px ;
+
+}
+
+.fa {
+
+}
+
+.fa:hover{
+    opacity: 0.7;
+
+}
+
+.social a {
     border-radius: 300px;
-    height: 150px;
-    width: 150px;
+    border: 1px solid #cf172b;
+    padding: 8px;
+    width: 50px;
+    height: 50px;
+    line-height: 28px;
+    text-align: center;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
 }
 
+
+
+
+
+/*Person review*/
+
+
+
+.carousel-inner .carousel-item .img-box{
+    width: 135px;
+    height: 135px;
+}
+.carousel-control-prev{
+    left: -100px;
+}
+.carousel-control-next{
+    right: -100px;
+}
+.carousel-indicators{
+    top: 360px;
+}
+@media (min-width: 320px) and (max-width: 640px) {
+    .carousel-inner .carousel-item p{
+        font-size: 14px;
+    }
+    .carousel-control-prev{
+        left: -40px;
+    }
+    .carousel-control-next{
+        right: -40px;
+    }
+    .carousel-indicators{
+        top: 515px;
+    }
+}
 
 
 
@@ -167,6 +267,10 @@ input, textarea {
 
     .logo img{
         width: 160px;
+    }
+
+    .carousel-indicators{
+        top: 390px;
     }
 
 }

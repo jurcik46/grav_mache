@@ -82,6 +82,6 @@ class __TwigTemplate_4f85d88ec908e76760112b72a558674b91f03c6dd74f08ae9ca0bac3a49
     </section>
     {% endfor %}
 {% endblock %}
-", "modular.html.twig", "/var/www/public/mache/user/themes/mache/templates/modular.html.twig");
+", "modular.html.twig", "/var/www/public/grav_mache/user/themes/mache/templates/modular.html.twig");
     }
 }

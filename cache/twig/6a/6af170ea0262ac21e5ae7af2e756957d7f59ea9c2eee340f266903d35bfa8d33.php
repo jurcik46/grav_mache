@@ -20,11 +20,11 @@ class __TwigTemplate_4560a4f8429a6f15230ce9f918b07c3ec0f3dc05eb46ea8d7275c0c327b
     <div class=\"container\">
         <div class=\"row\">
             <div class=\"col-lg-12 os-animation\" data-os-animation=\"fadeIn\" data-os-animation-delay=\"0.3s\">
-            <h2>";
+                <h2 class=\"text-center mt-5 mb-5 pb-2 text-uppercase text-black\"><strong>";
         // line 5
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "title", array());
-        echo "</h2>
-            <span class=\"line\"></span>
+        echo "</strong></h2>
+                <span class=\"line\"></span>
             ";
         // line 7
         echo ($context["content"] ?? null);
@@ -96,8 +96,8 @@ class __TwigTemplate_4560a4f8429a6f15230ce9f918b07c3ec0f3dc05eb46ea8d7275c0c327b
     <div class=\"container\">
         <div class=\"row\">
             <div class=\"col-lg-12 os-animation\" data-os-animation=\"fadeIn\" data-os-animation-delay=\"0.3s\">
-            <h2>{{ page.header.title }}</h2>
-            <span class=\"line\"></span>
+                <h2 class=\"text-center mt-5 mb-5 pb-2 text-uppercase text-black\"><strong>{{ page.header.title }}</strong></h2>
+                <span class=\"line\"></span>
             {{ content }}
         </div>
         </div>
@@ -113,6 +113,6 @@ class __TwigTemplate_4560a4f8429a6f15230ce9f918b07c3ec0f3dc05eb46ea8d7275c0c327b
         {% endif %}
     </div>
 </div>
-", "modular/services.html.twig", "/var/www/public/mache/user/themes/mache/templates/modular/services.html.twig");
+", "modular/services.html.twig", "/var/www/public/grav_mache/user/themes/mache/templates/modular/services.html.twig");
     }
 }

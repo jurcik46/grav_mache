@@ -1,5 +1,5 @@
 ---
-title: Sponros
+title: Sponsors
 media_order: 'stiahnuť (1).png,stiahnuť (2).png,stiahnuť.png,images.png,IBM-Company-Logo.jpg'
 menu: Sponsors
 sponsors:

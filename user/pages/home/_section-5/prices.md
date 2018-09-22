@@ -1,16 +1,16 @@
 ---
-title: Pricing
+title: Kurzy
 body_classes: modular
 menu: Prices
-buy_button_label: 'Order now'
+buy_button_label: 'Viac Info'
 prices:
     -
         amount: 5€
         interval: 'per year'
-        title: Standard
+        title: 'Standard Standard'
         features:
             -
-                title: '5 Projects'
+                title: 'Duis rutrum lorem in tortor finibus tristique. Vestibulum blandit metus sit amet libero fermentum pharetra. Nunc sit amet velit nec augue sollicitudin scelerisque vitae ac augue. Nam viverra arcu a faucibus faucibus. Aliquam erat volutpat. Aliquam erat volutpat.'
             -
                 title: '200 MB Storage'
             -

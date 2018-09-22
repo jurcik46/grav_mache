@@ -45,6 +45,6 @@ class __TwigTemplate_bb1db8d11c5609f9f608a429155dce6f5c3b14162dfc486f9749fe71798
         return new Twig_Source("<button class=\"lines-button x\" type=\"button\" role=\"button\" aria-label=\"Toggle Navigation\" data-sidebar-mobile-toggle>
     <span class=\"lines\"></span>
 </button>
-", "partials/nav-toggle.html.twig", "/var/www/public/mache/user/plugins/admin/themes/grav/templates/partials/nav-toggle.html.twig");
+", "partials/nav-toggle.html.twig", "/var/www/public/grav_mache/user/plugins/admin/themes/grav/templates/partials/nav-toggle.html.twig");
     }
 }

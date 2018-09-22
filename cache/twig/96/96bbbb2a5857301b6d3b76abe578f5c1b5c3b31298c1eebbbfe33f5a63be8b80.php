@@ -99,7 +99,7 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
         ";
         // line 30
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 46
+        // line 48
         echo "        ";
         echo $this->getAttribute(($context["assets"] ?? null), "css", array(), "method");
         echo "
@@ -123,9 +123,9 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
                     <div class=\"col-lg-12\">
                         <div class=\"logo\">
                             ";
-        // line 66
+        // line 68
         if (($context["logo"] ?? null)) {
-            // line 67
+            // line 69
             echo "                            <a href=\"";
             echo (((($context["base_url"] ?? null) == "")) ? ("/") : (($context["base_url"] ?? null)));
             echo "\"><img src=\"";
@@ -135,14 +135,14 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
             echo "\"/></a>
                             ";
         }
-        // line 69
+        // line 71
         echo "                        </div>
 
                         <nav class=\"nav-collapse\">
                             ";
-        // line 72
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 72)->display($context);
-        // line 73
+        // line 74
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 74)->display($context);
+        // line 75
         echo "                        </nav>
                     </div>
                 </div>
@@ -150,22 +150,22 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
         </header>
 
         ";
-        // line 79
+        // line 81
         $this->displayBlock('content', $context, $blocks);
-        // line 82
+        // line 84
         echo "
         <footer>
             <div class=\"container\">
                 <div class=\"row\">
                     <div class=\"col-lg-6 col-sm-6 col-md-6\">
                         ";
-        // line 87
+        // line 89
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->markdownFunction($this->getAttribute(($context["theme_config"] ?? null), "left_footer", array()));
         echo "
                     </div>
                     <div class=\"col-lg-6 col-sm-6 col-md-6\">
                         <div class=\"rightside\">";
-        // line 90
+        // line 92
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->markdownFunction($this->getAttribute(($context["theme_config"] ?? null), "right_footer", array()));
         echo "</div>
                     </div>
@@ -174,14 +174,14 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
         </footer>
 
         ";
-        // line 96
+        // line 98
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 103
+        // line 105
         echo "        ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(), "method");
         echo "
         ";
-        // line 104
+        // line 106
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(0 => "bottom"), "method");
         echo "
     </body>
@@ -193,69 +193,71 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
     public function block_stylesheets($context, array $blocks = array())
     {
         // line 31
-        echo "            <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">
+        echo "            <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">
+
+            <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">
             <link href='https://fonts.googleapis.com/css?family=Lato:100,400,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
             <link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Montserrat:400,700\">
             <link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Roboto:300,400,700,400italic,700italic&amp;subset=latin,latin-ext\">
 
             ";
-        // line 36
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/grid.css"), "method");
-        // line 37
-        echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/style.css"), "method");
         // line 38
-        echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/menu.css"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/grid.css"), "method");
         // line 39
         echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/jquery.bxslider.css"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/style.css"), "method");
         // line 40
         echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/responsive.css"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/menu.css"), "method");
         // line 41
         echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/animate.css"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/jquery.bxslider.css"), "method");
         // line 42
+        echo "            ";
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/responsive.css"), "method");
+        // line 43
+        echo "            ";
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/animate.css"), "method");
+        // line 44
         echo "\t\t\t";
         $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/custom.css"), "method");
-        // line 43
+        // line 45
         echo "\t\t\t";
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/jquery.bxslider.js"), "method");
-        // line 44
+        // line 46
         echo "
         ";
     }
 
-    // line 79
+    // line 81
     public function block_content($context, array $blocks = array())
     {
-        // line 80
+        // line 82
         echo "            ";
         echo ($context["content"] ?? null);
         echo "
         ";
     }
 
-    // line 96
+    // line 98
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 97
-        echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "jquery", 1 => 101), "method");
-        // line 98
-        echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/jquery.bxslider.js"), "method");
         // line 99
         echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/script.js"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "jquery", 1 => 101), "method");
         // line 100
         echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/fixed-responsive-nav.js"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/jquery.bxslider.js"), "method");
         // line 101
         echo "            ";
-        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/waypoints.min.js"), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/script.js"), "method");
         // line 102
+        echo "            ";
+        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/fixed-responsive-nav.js"), "method");
+        // line 103
+        echo "            ";
+        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/waypoints.min.js"), "method");
+        // line 104
         echo "        ";
     }
 
@@ -271,7 +273,7 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
 
     public function getDebugInfo()
     {
-        return array (  259 => 102,  256 => 101,  253 => 100,  250 => 99,  247 => 98,  244 => 97,  241 => 96,  234 => 80,  231 => 79,  226 => 44,  223 => 43,  220 => 42,  217 => 41,  214 => 40,  211 => 39,  208 => 38,  205 => 37,  203 => 36,  196 => 31,  193 => 30,  185 => 104,  180 => 103,  178 => 96,  169 => 90,  163 => 87,  156 => 82,  154 => 79,  146 => 73,  144 => 72,  139 => 69,  129 => 67,  127 => 66,  103 => 46,  101 => 30,  96 => 28,  93 => 27,  87 => 25,  85 => 24,  81 => 22,  79 => 21,  71 => 20,  65 => 16,  57 => 13,  54 => 12,  49 => 11,  47 => 10,  40 => 8,  37 => 7,  32 => 6,  30 => 5,  28 => 4,  26 => 3,  24 => 2,  22 => 1,);
+        return array (  261 => 104,  258 => 103,  255 => 102,  252 => 101,  249 => 100,  246 => 99,  243 => 98,  236 => 82,  233 => 81,  228 => 46,  225 => 45,  222 => 44,  219 => 43,  216 => 42,  213 => 41,  210 => 40,  207 => 39,  205 => 38,  196 => 31,  193 => 30,  185 => 106,  180 => 105,  178 => 98,  169 => 92,  163 => 89,  156 => 84,  154 => 81,  146 => 75,  144 => 74,  139 => 71,  129 => 69,  127 => 68,  103 => 48,  101 => 30,  96 => 28,  93 => 27,  87 => 25,  85 => 24,  81 => 22,  79 => 21,  71 => 20,  65 => 16,  57 => 13,  54 => 12,  49 => 11,  47 => 10,  40 => 8,  37 => 7,  32 => 6,  30 => 5,  28 => 4,  26 => 3,  24 => 2,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -314,6 +316,8 @@ class __TwigTemplate_a02ca6aab85aa73a26f865fed907b871fdc49a0678f1d69067926e2c34a
         <link rel=\"canonical\" href=\"{{ page.url(true, true) }}\" />
 
         {% block stylesheets %}
+            <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">
+
             <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">
             <link href='https://fonts.googleapis.com/css?family=Lato:100,400,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
             <link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Montserrat:400,700\">

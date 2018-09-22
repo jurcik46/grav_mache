@@ -160,6 +160,6 @@ class __TwigTemplate_5e3623b7a73468ac9cc4c9167ddc4ba47e7991a6cef8ffa45bc761f84af
     {% set field = field|merge({'wrapper_classes': 'form-input-addon-wrapper'}) %}
 {% endif %}
 {{ parent() }}
-{% endblock %}", "forms/fields/text/text.html.twig", "/var/www/public/mache/user/plugins/form/templates/forms/fields/text/text.html.twig");
+{% endblock %}", "forms/fields/text/text.html.twig", "/var/www/public/grav_mache/user/plugins/form/templates/forms/fields/text/text.html.twig");
     }
 }

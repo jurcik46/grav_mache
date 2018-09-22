@@ -3,14 +3,16 @@
 {% if page.header.sponsors %}
 
                  <section class="customer-logos slider">
-                     <h2>Sponsors</h2>
+                     <h2 class="text-center mt-5 mb-5 pb-2 text-uppercase text-dark"><strong>{{ page.header.title }}</strong></h2>
                      <span class="line"></span>
                     <div class="sponsors imgs"> {% for sponsor in page.header.sponsors %}
-                                <a href="{% if sponsor.link %} {{ sponsor.link }}
+                        <div class="col-lg-3 col-sm-6 col-md-3 os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.4s">
+
+                        <a href="{% if sponsor.link %} {{ sponsor.link }}
                                         {% endif %}">
                                     <img src="{{page.media.images[sponsor.icon].cache.url()}}">
                                 </a>
-
+                        </div>
                     {% endfor %}
                     </div>
                  </section>

@@ -126,6 +126,6 @@ class __TwigTemplate_ddb37871a7abbe88ef625e918b9c01bb51ff151338ccf53840aa86a0d75
     {% endfor %}
 {% endif %}
 </ul>
-", "partials/navigation.html.twig", "/var/www/public/mache/user/themes/mache/templates/partials/navigation.html.twig");
+", "partials/navigation.html.twig", "/var/www/public/grav_mache/user/themes/mache/templates/partials/navigation.html.twig");
     }
 }

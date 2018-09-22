@@ -88,6 +88,6 @@ class __TwigTemplate_33bd30aa53c3b639a48bf68b410426ea2727b9b3622f602ffab48b9786f
         </div>
     </a>
 </div>
-", "partials/nav-user-details.html.twig", "/var/www/public/mache/user/plugins/admin/themes/grav/templates/partials/nav-user-details.html.twig");
+", "partials/nav-user-details.html.twig", "/var/www/public/grav_mache/user/plugins/admin/themes/grav/templates/partials/nav-user-details.html.twig");
     }
 }

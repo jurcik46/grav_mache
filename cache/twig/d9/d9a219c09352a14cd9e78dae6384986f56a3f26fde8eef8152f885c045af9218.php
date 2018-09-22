@@ -114,6 +114,6 @@ class __TwigTemplate_8f2d0b4f1cd9d2b8b1f344c2cc80356a1c50d5c8c70a2abaf4bb3381ff1
     </div>
 </section>
 {% endif %}
-", "modular/features.html.twig", "/var/www/public/mache/user/themes/mache/templates/modular/features.html.twig");
+", "modular/features.html.twig", "/var/www/public/grav_mache/user/themes/mache/templates/modular/features.html.twig");
     }
 }

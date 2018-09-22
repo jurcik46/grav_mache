@@ -252,6 +252,6 @@ class __TwigTemplate_7f80a5dcfee1999f64ac69003247a0c2529c595e905748f247d4ea7fd55
         </div>
     </div>
 {% endblock %}
-", "forms/fields/editor/editor.html.twig", "/var/www/public/mache/user/plugins/admin/themes/grav/templates/forms/fields/editor/editor.html.twig");
+", "forms/fields/editor/editor.html.twig", "/var/www/public/grav_mache/user/plugins/admin/themes/grav/templates/forms/fields/editor/editor.html.twig");
     }
 }

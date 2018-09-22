@@ -219,6 +219,6 @@ class __TwigTemplate_ecac76bde16d09d613f7cdd14359a3fe27e5e2495be036a869b8dfbcd5b
 </div>
 {% endblock %}
 
-", "forms/fields/colorpicker/colorpicker.html.twig", "/var/www/public/mache/user/plugins/admin/themes/grav/templates/forms/fields/colorpicker/colorpicker.html.twig");
+", "forms/fields/colorpicker/colorpicker.html.twig", "/var/www/public/grav_mache/user/plugins/admin/themes/grav/templates/forms/fields/colorpicker/colorpicker.html.twig");
     }
 }

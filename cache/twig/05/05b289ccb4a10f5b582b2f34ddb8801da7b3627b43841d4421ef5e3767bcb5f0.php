@@ -19,18 +19,21 @@ class __TwigTemplate_7c4bbf75d21264e95fd85cade0d72614e4af37ffc6b7eaf3c970795ef93
         echo "<section class=\"map\">
     <div class=\"container\">
         <div class=\"row\">
+            <div class=\"col-lg-12 os-animation\" data-os-animation=\"fadeIn\" data-os-animation-delay=\"0.5s\">
+
             <div class=\"col-sm-4\">
                 <div class=\"row\">
+
                     <div class=\"col-md-12 col-sm-6\">
                         <div class=\"widget\">
                             <h3 class=\"widget-title\">";
-        // line 8
+        // line 11
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "name", array());
         echo "</h3>
                             <div class=\"widget-content\">
                                 <p>
                                     ";
-        // line 11
+        // line 14
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "address", array());
         echo "</p>
                             </div>
@@ -39,19 +42,19 @@ class __TwigTemplate_7c4bbf75d21264e95fd85cade0d72614e4af37ffc6b7eaf3c970795ef93
                     <div class=\"col-md-12 col-sm-6\">
                         <div class=\"widget\">
                             <h3 class=\"widget-title\">";
-        // line 17
+        // line 20
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "contact_titile", array());
         echo "</h3>
                             <div class=\"widget-content\"><p>
                                     E-mail:     <a href=\"mailto:";
-        // line 19
+        // line 22
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "contact_email", array());
         echo "\">";
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "contact_email", array());
         echo "</a>
                                     <br>
                                     Telefon:    ";
-        // line 21
+        // line 24
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "contact_phone", array());
         echo "
                                     </p>
@@ -66,12 +69,13 @@ class __TwigTemplate_7c4bbf75d21264e95fd85cade0d72614e4af37ffc6b7eaf3c970795ef93
                 </div>
             </div>
         </div>
+        </div>
     </div>
 </section>
 <script>
     function initMap() {
         var myLatLng = {lat: ";
-        // line 38
+        // line 42
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->definedDefaultFilter($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "latitude", array()), 0);
         echo ", lng: ";
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->definedDefaultFilter($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "longitude", array()), 0);
@@ -79,7 +83,7 @@ class __TwigTemplate_7c4bbf75d21264e95fd85cade0d72614e4af37ffc6b7eaf3c970795ef93
 
         var map = new google.maps.Map(document.getElementById('googleMaps'), {
             zoom: ";
-        // line 41
+        // line 45
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->definedDefaultFilter($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "zoom", array()), 10);
         echo ",
             center: myLatLng
@@ -89,20 +93,20 @@ class __TwigTemplate_7c4bbf75d21264e95fd85cade0d72614e4af37ffc6b7eaf3c970795ef93
             position: myLatLng,
             map: map,
             ";
-        // line 48
+        // line 52
         if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "marker_icon", array())) {
-            // line 49
+            // line 53
             echo "            icon: '";
             echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), "images", array()), $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "marker_icon", array()), array(), "array"), "cache", array()), "url", array());
             echo "'
             ";
         }
-        // line 51
+        // line 55
         echo "        });
     }
 </script>
 <script src=\"http://maps.google.com/maps/api/js?key=";
-        // line 54
+        // line 58
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "google_maps_api_key", array());
         echo "&callback=initMap\"></script>
 ";
@@ -120,7 +124,7 @@ class __TwigTemplate_7c4bbf75d21264e95fd85cade0d72614e4af37ffc6b7eaf3c970795ef93
 
     public function getDebugInfo()
     {
-        return array (  106 => 54,  101 => 51,  95 => 49,  93 => 48,  83 => 41,  75 => 38,  55 => 21,  48 => 19,  43 => 17,  34 => 11,  28 => 8,  19 => 1,);
+        return array (  110 => 58,  105 => 55,  99 => 53,  97 => 52,  87 => 45,  79 => 42,  58 => 24,  51 => 22,  46 => 20,  37 => 14,  31 => 11,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -136,8 +140,11 @@ class __TwigTemplate_7c4bbf75d21264e95fd85cade0d72614e4af37ffc6b7eaf3c970795ef93
         return new Twig_Source("<section class=\"map\">
     <div class=\"container\">
         <div class=\"row\">
+            <div class=\"col-lg-12 os-animation\" data-os-animation=\"fadeIn\" data-os-animation-delay=\"0.5s\">
+
             <div class=\"col-sm-4\">
                 <div class=\"row\">
+
                     <div class=\"col-md-12 col-sm-6\">
                         <div class=\"widget\">
                             <h3 class=\"widget-title\">{{ page.header.name }}</h3>
@@ -165,6 +172,7 @@ class __TwigTemplate_7c4bbf75d21264e95fd85cade0d72614e4af37ffc6b7eaf3c970795ef93
                     <div id=\"googleMaps\"></div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </section>

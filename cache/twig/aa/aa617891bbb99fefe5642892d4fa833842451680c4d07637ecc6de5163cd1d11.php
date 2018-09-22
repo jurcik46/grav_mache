@@ -198,6 +198,6 @@ class __TwigTemplate_8c9cc2797ff1e557e3adc8abccc1b4d7ece8b45cbd88e718b2a877b9256
     {% endif %}
 </ul>
 
-", "partials/nav-quick-tray.html.twig", "/var/www/public/mache/user/plugins/admin/themes/grav/templates/partials/nav-quick-tray.html.twig");
+", "partials/nav-quick-tray.html.twig", "/var/www/public/grav_mache/user/plugins/admin/themes/grav/templates/partials/nav-quick-tray.html.twig");
     }
 }

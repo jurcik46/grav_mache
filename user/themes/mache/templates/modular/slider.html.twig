@@ -1,31 +1,137 @@
-{% if page.header.slider %}
-<div class="testimonials slider"{%if page.header.background_image %} style="background-image: url({{ page.media.images[page.header.background_image].cache.url() }})"{% endif %}>
+<section class="team" {%if page.header.background_image %}
+                        style="background-image: url({{ page.media.images[page.header.background_image].cache.url() }})"
+                      {% endif %}>
+    {% if page.header.slider %}
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s">
-                <ul class="bxslider">
-                    {% for slide in page.header.slider %}
-                    <li>
-                        <img src="{{ page.media.images[slide.person_photo].cache.url() }}">
-                        <p>{{ slide.person_name }}</p>
-                        <p>{{ slide.person_description }}</p>
-                        <ul>
-                            {%if slide.person_facebook %}
-                            <li>
-                                <p>{{ slide.person_facebook }}</p>
-                            </li>
+      <div class="col-lg-12 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s">     <div class="col-md-8 offset-md-2 col-10 offset-1 mt-5">
+               <h2 class="text-center mt-5 mb-5 pb-2 text-uppercase text-white"><strong>{{ page.header.title }}</strong></h2>
+               <span class="line"></span>
+               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                   <ol class="carousel-indicators">
+
+                   {% for slide in page.header.slider %}
+                       <li data-target="#carouselExampleIndicators" data-slide-to="{{ loop.index0 }}"
+
+                           {% if loop.index0 == 0 %} class="active"
                             {% endif %}
-                            {%if slide.person_youtube %}
-                                <li>
-                                    <p>{{ slide.person_youtube }}</p>
-                                </li>
-                            {% endif %}
-                        </ul>
-                    </li>
+                       ></li>
+
+                   {% endfor %}
+                   </ol>
+                   <div class="carousel-inner mt-4">
+
+                   {% for slide in page.header.slider %}
+
+                            <div class="carousel-item text-center
+                                {% if loop.index0 == 0 %}
+                                         active
+                                {% endif %}  ">
+                                <div class="img-box p-1 border rounded-circle m-auto">
+                                    <img class="d-block w-100 rounded-circle" src="{{ page.media.images[slide.person_photo].cache.url() }}" alt="Photo">
+                                </div>
+                                <h5 class="mt-4 mb-0"><strong class="text-danger text-uppercase">{{ slide.person_name }}</strong></h5>
+                                {#<h6 class="text-dark m-0">Web Developer</h6>#}
+                                <p class="m-0 pt-3 text-white">{{ slide.person_description }}</p>
+                                <div class="social">
+                                {%if slide.person_facebook %}
+                                <a href="{{ slide.person_facebook }}">
+                                <i class="fa fa-facebook fa-lg fa-fw">  </i>
+                                </a>
+                                {% endif %}
+                                {%if slide.person_youtube %}
+                                <a href="{{ slide.person_youtube }}">
+                                <i class="fa fa-youtube fa-lg fa-fw">  </i>
+                                </a>
+                                {% endif %}
+                                {%if slide.person_youtube %}
+                                <a href="{{ slide.person_youtube }}">
+                                <i class="fa fa-youtube fa-lg fa-fw">  </i>
+                                </a>
+                                {% endif %}
+                                {%if slide.person_youtube %}
+                                <a href="{{ slide.person_youtube }}">
+                                <i class="fa fa-youtube fa-lg fa-fw">  </i>
+                                </a>
+                                {% endif %}
+                                {%if slide.person_youtube %}
+                                <a href="{{ slide.person_youtube }}">
+                                <i class="fa fa-youtube fa-lg fa-fw">  </i>
+                                </a>
+                                {% endif %}
+                                </div>
+                            </div>
+
+
+
                     {% endfor %}
-                </ul>
+                   </div>
+
+
+                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="sr-only">Previous</span>
+                   </a>
+                   <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="sr-only">Next</span>
+                   </a>
             </div>
+           </div></div>
         </div>
     </div>
-</div>
-{% endif %}
+    {% endif %}
+</section>
+
+{#<section class="team"><div class="container">#}
+    {#<div class="row">#}
+        {#<div class="col-md-8 offset-md-2 col-10 offset-1 mt-5">#}
+            {#<h2 class="text-center mt-5 mb-5 pb-2 text-uppercase text-dark"><strong>Inštruktori</strong></h2>#}
+            {#<span class="line"></span>#}
+            {#<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">#}
+                {#<ol class="carousel-indicators">#}
+                    {#<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>#}
+                    {#<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>#}
+                    {#<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>#}
+                {#</ol>#}
+                {#<div class="carousel-inner mt-4">#}
+                    {#<div class="carousel-item text-center active">#}
+                        {#<div class="img-box p-1 border rounded-circle m-auto">#}
+                            {#<img class="d-block w-100 rounded-circle" src="http://nicesnippets.com/demo/profile-1.jpg" alt="First slide">#}
+                        {#</div>#}
+                        {#<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Paul Mitchel</strong></h5>#}
+                        {#<h6 class="text-dark m-0">Web Developer</h6>#}
+                        {#<p class="m-0 pt-3 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>#}
+                    {#</div>#}
+                    {#<div class="carousel-item text-center">#}
+                        {#<div class="img-box p-1 border rounded-circle m-auto">#}
+                            {#<img class="d-block w-100 rounded-circle" src="http://nicesnippets.com/demo/profile-3.jpg" alt="First slide">#}
+                        {#</div>#}
+                        {#<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Steve Fonsi</strong></h5>#}
+                        {#<h6 class="text-dark m-0">Web Designer</h6>#}
+                        {#<p class="m-0 pt-3 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>#}
+                    {#</div>#}
+                    {#<div class="carousel-item text-center">#}
+                        {#<div class="img-box p-1 border rounded-circle m-auto">#}
+                            {#<img class="d-block w-100 rounded-circle" src="http://nicesnippets.com/demo/profile-7.jpg" alt="First slide">#}
+                        {#</div>#}
+                        {#<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Daniel vebar</strong></h5>#}
+                        {#<h6 class="text-dark m-0">Seo Analyst</h6>#}
+                        {#<p class="m-0 pt-3 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>#}
+                    {#</div>#}
+                {#</div>#}
+
+
+
+                {#<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">#}
+                    {#<span class="carousel-control-prev-icon" aria-hidden="true"></span>#}
+                    {#<span class="sr-only">Previous</span>#}
+                {#</a>#}
+                {#<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">#}
+                    {#<span class="carousel-control-next-icon" aria-hidden="true"></span>#}
+                    {#<span class="sr-only">Next</span>#}
+                {#</a>#}
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
+{#</div></section>#}

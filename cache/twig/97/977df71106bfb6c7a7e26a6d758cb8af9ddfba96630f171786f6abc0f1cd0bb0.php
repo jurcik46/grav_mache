@@ -20,10 +20,10 @@ class __TwigTemplate_60c09449d4949cf785282e1f10d94dcb040a7fb2c25ff617af825065187
     <div class=\"container\">
         <div class=\"row\">
             <div class=\"col-lg-12 os-animation\" data-os-animation=\"zoomIn\" data-os-animation-delay=\"0.4s\">
-                <h2>";
+                <h2 class=\"text-center mt-5 mb-5 pb-2 text-uppercase text-black\"><strong>";
         // line 5
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "title", array());
-        echo "</h2>
+        echo "</strong></h2>
                 <span class=\"line\"></span>
                 <div class=\"top\">";
         // line 7
@@ -127,7 +127,7 @@ class __TwigTemplate_60c09449d4949cf785282e1f10d94dcb040a7fb2c25ff617af825065187
     <div class=\"container\">
         <div class=\"row\">
             <div class=\"col-lg-12 os-animation\" data-os-animation=\"zoomIn\" data-os-animation-delay=\"0.4s\">
-                <h2>{{ page.header.title }}</h2>
+                <h2 class=\"text-center mt-5 mb-5 pb-2 text-uppercase text-black\"><strong>{{ page.header.title }}</strong></h2>
                 <span class=\"line\"></span>
                 <div class=\"top\">{{ content }}</div>
             </div>
@@ -154,6 +154,6 @@ class __TwigTemplate_60c09449d4949cf785282e1f10d94dcb040a7fb2c25ff617af825065187
         {% endif %}
     </div>
 </div>
-", "modular/prices.html.twig", "/var/www/public/mache/user/themes/mache/templates/modular/prices.html.twig");
+", "modular/prices.html.twig", "/var/www/public/grav_mache/user/themes/mache/templates/modular/prices.html.twig");
     }
 }

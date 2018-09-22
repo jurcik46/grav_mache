@@ -32,12 +32,12 @@ class __TwigTemplate_a66c0c38a2f11ad054c9226918efa937379bb51b1314c5ec6a1db4237b5
     <div class=\"container\">
         <div class=\"row\">
             <div class=\"col-lg-12\">
-                <h1 class=\"os-animation\" data-os-animation=\"zoomIn\" data-os-animation-delay=\"0.2s\">";
+                <h1 class=\"os-animation text-center mt-5 mb-5 pb-2 text-uppercase text-white\" data-os-animation=\"zoomIn\" data-os-animation-delay=\"0.2s\"><strong>";
         // line 5
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "heading", array());
-        echo "</h1>
+        echo "</strong></h1>
                 <span class=\"line os-animation\" data-os-animation=\"zoomIn\" data-os-animation-delay=\"0.3s\"></span>
-                <div class=\"os-animation\" data-os-animation=\"zoomIn\" data-os-animation-delay=\"0.4s\">";
+                <div class=\"os-animation text-light\" data-os-animation=\"zoomIn\" data-os-animation-delay=\"0.4s\">";
         // line 7
         echo ($context["content"] ?? null);
         echo "</div>
@@ -92,9 +92,9 @@ class __TwigTemplate_a66c0c38a2f11ad054c9226918efa937379bb51b1314c5ec6a1db4237b5
     <div class=\"container\">
         <div class=\"row\">
             <div class=\"col-lg-12\">
-                <h1 class=\"os-animation\" data-os-animation=\"zoomIn\" data-os-animation-delay=\"0.2s\">{{ page.header.heading }}</h1>
+                <h1 class=\"os-animation text-center mt-5 mb-5 pb-2 text-uppercase text-white\" data-os-animation=\"zoomIn\" data-os-animation-delay=\"0.2s\"><strong>{{ page.header.heading }}</strong></h1>
                 <span class=\"line os-animation\" data-os-animation=\"zoomIn\" data-os-animation-delay=\"0.3s\"></span>
-                <div class=\"os-animation\" data-os-animation=\"zoomIn\" data-os-animation-delay=\"0.4s\">{{ content }}</div>
+                <div class=\"os-animation text-light\" data-os-animation=\"zoomIn\" data-os-animation-delay=\"0.4s\">{{ content }}</div>
                 {% if page.header.button_url %}
                 <div class=\"button-container\">
                     <a href=\"{{ page.header.button_url }}\" class=\"os-animation\" data-os-animation=\"zoomIn\" data-os-animation-delay=\"0.5s\">{{ page.header.button_label }}</a>
@@ -104,6 +104,6 @@ class __TwigTemplate_a66c0c38a2f11ad054c9226918efa937379bb51b1314c5ec6a1db4237b5
         </div>
     </div>
 </div>
-", "modular/banner.html.twig", "/var/www/public/mache/user/themes/mache/templates/modular/banner.html.twig");
+", "modular/banner.html.twig", "/var/www/public/grav_mache/user/themes/mache/templates/modular/banner.html.twig");
     }
 }

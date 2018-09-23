@@ -4,7 +4,7 @@ menu: Registration
 visible: true
 list_summary: ''
 form:
-    name: contact-form
+    name: program-form
     fields:
         -
             name: name
@@ -22,6 +22,14 @@ form:
             type: email
             validate:
                 required: true
+        -   
+            program:
+                type: radio
+                label: Program
+                placeholder: 'asdadsd'
+                options:
+                    aka: Akademicky
+                    notaka: Neakademický
     buttons:
         -
             type: submit

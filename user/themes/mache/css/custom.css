@@ -4,6 +4,10 @@ header, .header {
     background: rgba(255, 255, 255, 0.85);
 }
 
+body{
+    background: #212121;
+}
+
 
 
 .nav-collapse, .nav-collapse ul {
@@ -119,6 +123,10 @@ input, textarea {
 }
 
 /*features*/
+.features {
+    background: white;
+
+}
 
 .features h3 {
     color: #cf172b;
@@ -127,6 +135,11 @@ input, textarea {
 }
 
 /*Service*/
+
+.services {
+    background: white;
+}
+
 .services h3 {
 
     color: #cf172b;
@@ -184,7 +197,7 @@ input, textarea {
 }
 /*Sponsors */
 .sponsors {
-
+    background: white;
     padding-bottom: 30px ;
 }
 
@@ -258,7 +271,8 @@ input, textarea {
     right: -100px;
 }
 .carousel-indicators{
-    top: 360px;
+    position: relative;
+    margin-top: 40px;
 }
 @media (min-width: 320px) and (max-width: 640px) {
     .carousel-inner .carousel-item p{
@@ -270,9 +284,7 @@ input, textarea {
     .carousel-control-next{
         right: -40px;
     }
-    .carousel-indicators{
-        top: 515px;
-    }
+
 }
 
 
@@ -287,9 +299,7 @@ input, textarea {
         width: 160px;
     }
 
-    .carousel-indicators{
-        top: 390px;
-    }
+
 
 }
 
@@ -303,6 +313,8 @@ input, textarea {
     .logo img{
     }
 }
+
+
 
 
 

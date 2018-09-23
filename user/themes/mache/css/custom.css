@@ -94,6 +94,13 @@ input, textarea {
     margin-top:5px
 }
 
+
+/*Forms*/
+.forms-section
+{   padding: 200px 0 100px 0 ;
+    background: #212121;
+}
+
 /*cat1*/
 .joinnow {
 

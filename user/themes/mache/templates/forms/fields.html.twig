@@ -5,7 +5,6 @@
 {% set cookie_name = 'forms-' ~ form.name ~ '-' ~ field.name %}
 {% set value = (is_object(value) or value is null ? (get_cookie(cookie_name) is null ? field.default : get_cookie(cookie_name)) : value) %}
 {% set errors = attribute(form.messages, field.name) %}
-
 {% block field %}
     <div class="{{ form_field_outer_classes ?: 'form-field' }} {{ field.outerclasses }} {% if errors %} has-errors{% endif %} {% block outer_field_classes %}{% endblock %}">
         {% block contents %}

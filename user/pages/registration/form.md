@@ -4,7 +4,7 @@ menu: Registration
 visible: true
 list_summary: ''
 form:
-    name: program-form
+    name: Registration
     fields:
         program: { id: 'radio-akadem', type: radio, label: 'Program' , default: akademicky, options: { akademicky: Akademicky, neakademicky: Neakademický} }
         first_name: { type: text, label: 'Meno', validate: { required: true}}
@@ -24,14 +24,6 @@ form:
             type: submit
             value: Odoslať
     process:
-        -
-            email:
-                from: '{{ config.plugins.email.from }}'
-                to:
-                    - '{{ config.plugins.email.to }}'
-                    - '{{ form.value.email }}'
-                subject: '[Feedback] {{ form.value.name|e }}'
-                body: '{% include ''forms/data.html.twig'' %}'
         -
             save:
                 fileprefix: feedback-

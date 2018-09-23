@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1537650652,
-    'checksum' => '918ce0db04b3c6f4daf22b9da44bab32',
+    'timestamp' => 1537712504,
+    'checksum' => '3096a23811ab0f009e8d98dd70bd8414',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1537650644
+            ],
+            'plugins/admin' => [
+                'file' => 'user/config/plugins/admin.yaml',
+                'modified' => 1537712504
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
@@ -31,7 +35,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1537650644
+                'modified' => 1537712336
             ],
             'themes/mache' => [
                 'file' => 'user/config/themes/mache.yaml',
@@ -142,10 +146,19 @@ return [
                         1 => '/modular'
                     ],
                     'history' => [
-                        'daily' => 30,
-                        'monthly' => 12,
-                        'visitors' => 20
+                        'daily' => '30',
+                        'monthly' => '12',
+                        'visitors' => '20'
                     ]
+                ],
+                'pagemedia' => [
+                    'resize_width' => 0,
+                    'resize_height' => 0,
+                    'res_min_width' => 0,
+                    'res_min_height' => 0,
+                    'res_max_width' => 0,
+                    'res_max_height' => 0,
+                    'resize_quality' => 0.80000000000000004
                 ]
             ],
             'email' => [

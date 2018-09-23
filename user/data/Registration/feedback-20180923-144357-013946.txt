@@ -1,0 +1,13 @@
+    <div><strong>Program</strong>: akademicky</div>
+    <div><strong>Meno</strong>: Ján</div>
+    <div><strong>Priezvisko</strong>: Jurč</div>
+    <div><strong>Dátum narodenia</strong>: 2018-09-05</div>
+    <div><strong>Firma, škola</strong>: asd</div>
+    <div><strong>Email</strong>: jurcik46@gmail.com</div>
+    <div><strong>Telefón</strong>: 910648605</div>
+    <div><strong></strong>: </div>
+    <div><strong>Fakulta</strong>: asd</div>
+    <div><strong>Ročník</strong>: </div>
+    <div><strong>Špecializácia</strong>: </div>
+    <div><strong></strong>: </div>
+    <div><strong>Poznámka</strong>: asd</div>

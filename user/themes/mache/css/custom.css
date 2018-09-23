@@ -111,16 +111,15 @@ input, textarea {
 .forms-section .button{
     background: #cf172b;
 }
-#program-form{
+#registration{
     width: 100%;
 }
 
-#program-form {
+#registration {
     color: #ffffff;
 
 }
-#program-form .form-group{
-    display: inline;
+#registration .form-group{
 
 }
 
@@ -134,7 +133,7 @@ input, textarea {
     border: 1px solid #a5a5a5;
     border-radius: 3px;
 }
-input[type="text"], textarea {
+input[type="text"], input[type="email"], input[type="date"], textarea {
     padding-left: 10px ;
     color: black;
 

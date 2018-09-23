@@ -12,7 +12,7 @@ class __TwigTemplate_1583ea7d7439a47896f769561fef480a598fdd797f0830f5826aed47e15
         $this->blocks = array(
             'contents' => array($this, 'block_contents'),
             'global_attributes' => array($this, 'block_global_attributes'),
-            '__internal_e408f6e41354bae6411f4fb2bf2e9ca816e0821165964d2e30246de2e260224d' => array($this, 'block___internal_e408f6e41354bae6411f4fb2bf2e9ca816e0821165964d2e30246de2e260224d'),
+            '__internal_967bc80e1e4f515336898f5066edf758d0fc66905f5cf55563346efe97ef1105' => array($this, 'block___internal_967bc80e1e4f515336898f5066edf758d0fc66905f5cf55563346efe97ef1105'),
         );
     }
 
@@ -485,7 +485,7 @@ $context["child"], "value" => ($context["childValue"] ?? null))));
         $context["itemName"] = ((($context["name"] ?? null)) ? ((($context["name"] ?? null) . ".*")) : ("*"));
         // line 139
         echo "<div style=\"display: none;\" data-collection-template=\"new\" data-collection-template-html=\"";
-        echo twig_escape_filter($this->env, twig_replace_filter(        $this->renderBlock("__internal_e408f6e41354bae6411f4fb2bf2e9ca816e0821165964d2e30246de2e260224d", $context, $blocks), array("   " => " ", "
+        echo twig_escape_filter($this->env, twig_replace_filter(        $this->renderBlock("__internal_967bc80e1e4f515336898f5066edf758d0fc66905f5cf55563346efe97ef1105", $context, $blocks), array("   " => " ", "
 " => " ")), "html_attr");
         // line 188
         echo "\"></div>
@@ -518,7 +518,7 @@ $context["child"], "value" => ($context["childValue"] ?? null))));
     }
 
     // line 139
-    public function block___internal_e408f6e41354bae6411f4fb2bf2e9ca816e0821165964d2e30246de2e260224d($context, array $blocks = array())
+    public function block___internal_967bc80e1e4f515336898f5066edf758d0fc66905f5cf55563346efe97ef1105($context, array $blocks = array())
     {
         // line 140
         echo "<li data-collection-item=\"";

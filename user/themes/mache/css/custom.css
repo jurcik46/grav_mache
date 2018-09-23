@@ -99,10 +99,52 @@ input, textarea {
 }
 
 
-/*Forms*/
+/*Form registration*/
+
 .forms-section
-{   padding: 200px 0 100px 0 ;
+{
+    color: white;
+    padding: 200px 10px 100px 10px ;
     background: #212121;
+}
+
+.forms-section .button{
+    background: #cf172b;
+}
+#program-form{
+    width: 100%;
+}
+
+#program-form {
+    color: #ffffff;
+
+}
+#program-form .form-group{
+    display: inline;
+
+}
+
+.forms-section input:focus, textarea:focus {
+    border: 1px solid #cf172b;
+    box-shadow: 3px 4px 10px 5px #ccc;
+    transition: 0.3s;
+}
+
+.forms-section input, textarea {
+    border: 1px solid #a5a5a5;
+    border-radius: 3px;
+}
+input[type="text"], textarea {
+    padding-left: 10px ;
+    color: black;
+
+}
+
+
+.forms-section textarea {
+    height: 100px;
+    width:  80%;
+
 }
 
 /*cat1*/

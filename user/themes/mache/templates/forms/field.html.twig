@@ -14,7 +14,7 @@
 {% block field %}
     {% block contents %}
         <div class="form-group user-{{ field.name }}">
-            <label for="{% if field.id is defined %}{{ field.id|e }}{% else %}{{ field.name|e }}{% endif %}" class="sr-only">{{ field.label }}</label>
+            <label for="{% if field.id is defined %}{{ field.id|e }}{% else %}{{ field.name|e }}{% endif %}" >{{ field.label }}</label>
             {% block group %}
                 {% block input %}
                     <input

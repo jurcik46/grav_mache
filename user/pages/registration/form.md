@@ -6,37 +6,23 @@ list_summary: ''
 form:
     name: program-form
     fields:
-        -
-            name: name
-            label: Name
-            placeholder: 'Enter your name'
-            autofocus: 'on'
-            autocomplete: 'on'
-            type: text
-            validate:
-                required: true
-        -
-            name: email
-            label: Email
-            placeholder: 'Enter your email address'
-            type: email
-            validate:
-                required: true
-        -   
-            program:
-                type: radio
-                label: Program
-                placeholder: 'asdadsd'
-                options:
-                    aka: Akademicky
-                    notaka: Neakademický
-    buttons:
+        program: { id: 'radio-akadem', type: radio, label: 'Program' , default: akademicky, options: { akademicky: Akademicky, neakademicky: Neakademický} }
+        first_name: { type: text, label: 'Meno', validate: { required: true}}
+        last_name: { type: text, label: 'Priezvisko', validate: { required: true} }
+        birthdate: { type: date, label: 'Dátum narodenia', validate: { required: true} }
+        company: { type: text, label: 'Firma, škola', validate: { required: true} }
+        email: { type: email, label: 'Email', validate: { required: true} }
+        phone: { type: text, label: 'Telefón'}
+        student_info: { type: display, size: large, content: "Ak ste študent uveď:" }
+        fakulta: { type: text, label: 'Fakulta'}
+        year: { type: text, label: 'Ročník'}
+        specialization: { type: text, label: 'Špecializácia'}
+        note_info: { type: display, size: large, content: "Poznámka pre príjemcu:" }
+        note: {type: textarea, rows: 3, cols: 10, label: 'Poznámka'}
+    buttons:    
         -
             type: submit
-            value: Submit
-        -
-            type: reset
-            value: Reset
+            value: Odoslať
     process:
         -
             email:

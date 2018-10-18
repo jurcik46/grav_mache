@@ -112,7 +112,7 @@ input, textarea {
     background: #cf172b;
 }
 #registration{
-    width: 100%;
+    width: 65%;
 }
 
 #registration {
@@ -145,6 +145,7 @@ input[type="text"], input[type="email"], input[type="date"], textarea {
     width:  80%;
 
 }
+
 
 /*cat1*/
 .joinnow {
